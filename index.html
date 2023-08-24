@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인페이지</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="./asset.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <video autoplay loop muted>
+          <source src="video.webm" type="video/webm" />
+        </video>
+        <div class="inner">
+          <div class="login_box">
+            <div class="title">
+              <span>EMS 에너지 관리 시스템</span>
+              <p>Energy Management System</p>
+            </div>
+
+            <form id="form">
+              <div class="input-group custom">
+                <i class="xi-user-o"></i>
+                <input id="id" type="text" placeholder="Username" />
+              </div>
+              <div class="input-group custom">
+                <i class="xi-lock-o"></i>
+                <input id="pw" type="password" placeholder="Password" />
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="input-group mb-0">
+                    <input
+                      type="submit"
+                      class="btn btn-primary btn-lg btn-block"
+                      style="
+                        background-color: #008bff;
+                        border: 2px solid #008bff;
+                      "
+                      value="로그인"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

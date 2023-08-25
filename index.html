@@ -8,50 +8,30 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
-    <link rel="stylesheet" href="./asset.css" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./css/asset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <style>
+      ul > li {
+        margin: 0 0 30px 0;
+      }
+      ul > li > a {
+        font-size: 30px;
+        font-weight: 500;
+        color: #eeffff;
+      }
+    </style>
   </head>
+
   <body>
     <main>
       <section>
-        <div class="v-con">
-          <video autoplay loop muted>
-            <source src="video (1080p).mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="inner">
-          <div class="login_box">
-            <div class="title">
-              <span>EMS 에너지 관리 시스템</span>
-              <p>Energy Management System</p>
-            </div>
-
-            <form id="form">
-              <div class="input-group custom">
-                <i class="xi-user-o"></i>
-                <input id="id" type="text" placeholder="Username" />
-              </div>
-              <div class="input-group custom">
-                <i class="xi-lock-o"></i>
-                <input id="pw" type="password" placeholder="Password" />
-              </div>
-
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="input-group mb-0">
-                    <input
-                      type="submit"
-                      class="btn btn-primary btn-lg btn-block"
-                      style="
-                        background-color: #008bff;
-                        border: 2px solid #008bff;
-                      "
-                      value="로그인"
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
+          <div class="login_box gradient-border">
+            <ul>
+              <li><a href="./video_login.html">VIDEO 페이지</a></li>
+              <li><a href="./image_login.html">IMAGE 페이지</a></li>
+            </ul>
           </div>
         </div>
       </section>

@@ -1,0 +1,177 @@
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+section .v-con {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -999;
+}
+section .v-con video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+section .inner .login_box {
+  width: fit-content;
+  height: auto;
+  padding: 100px;
+  margin: 0 auto;
+  /* background: rgb(11, 17, 17); */
+}
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: rgba(6, 8, 8, 0.91);
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    rgba(238, 255, 255, 0.5),
+    rgb(23, 130, 255, 0.5),
+    rgb(0, 220, 241, 0.5),
+    rgb(78, 255, 253, 0.5),
+    rgb(4, 57, 107, 0.5)
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -2;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section .inner .login_box .title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+section .inner .login_box .title span {
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  color: #eeffff;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+section .inner .login_box .title p {
+  font-size: 18px;
+  font-weight: 100;
+  color: #afafaf;
+}
+
+#form .input-group {
+  width: 100%;
+  border-bottom: 2px solid #eeffff;
+}
+#form .input-group {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #eeffff !important;
+}
+#form .input-group svg {
+  /* margin-right: 10px; */
+
+  /* vertical-align: middle; */
+}
+#form .input-group input {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 300;
+}
+#form .input-group input::placeholder {
+  color: #eeffff;
+}
+#form .input-group-btn {
+  padding: 10px 0;
+  color: #eeffff;
+}
+#form .input-group-btn input {
+  width: 100%;
+
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0;
+
+  background: #00353a;
+  transition: 0.4s;
+}
+#form .input-group-btn input:hover {
+  background: #008894;
+  box-shadow: inset 0px -1px 3px rgba(255, 255, 255, 0.6),
+    inset 0px 1px 3px rgba(255, 255, 255, 0.6);
+}
+
+.img-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-url) no-repeat center center/cover;
+  z-index: -2;
+}
+
+.img-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.img-log {
+  background: rgba(0, 0, 0, 0.7);
+  -box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+.change {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px 20px;
+  background: #00353a;
+  cursor: pointer;
+}

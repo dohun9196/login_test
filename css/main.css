@@ -94,7 +94,7 @@ section .inner .login_box .title p {
 
 #form .input-group {
   width: 100%;
-  border-bottom: 2px solid #eeffff;
+  border-bottom: 1px solid #eeffff;
 }
 #form .input-group {
   display: flex;
